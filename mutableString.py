@@ -20,6 +20,9 @@ class String():
 		return self.__class__(''.join(self.__listofthestring) + str(o))
 	def __radd__(self,o):
 		return self.__class__(''.join(self.__listofthestring) + str(o))
+	def format(self,*pargs,**kwargs):
+		res=''.join(self.__listofthestring)
+		res.format(*pargs,**kwargs)
 
 
 
