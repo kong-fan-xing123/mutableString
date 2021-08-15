@@ -1,6 +1,6 @@
 #!/usr/bin/python3.10
 # use for python3.10
-# 适用于Python3.10
+# 适用于Python3.10+
 class String():
 	def __init__(self, object: str=''):
 		self.__listofthestring = list(object)
