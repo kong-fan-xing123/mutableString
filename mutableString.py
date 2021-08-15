@@ -2,7 +2,7 @@
 # use for python3.10
 # 适用于Python3.10
 class String():
-	def __init__(self, object: str | bytearray=''):
+	def __init__(self, object: str=''):
 		self.__listofthestring = list(object)
 	def __getitem__(self,index):
 		return self.__listofthestring[index]
@@ -20,5 +20,7 @@ class String():
 		return self.__class__(''.join(self.__listofthestring) + str(o))
 	def __radd__(self,o):
 		return self.__class__(''.join(self.__listofthestring) + str(o))
+
+
 
 
