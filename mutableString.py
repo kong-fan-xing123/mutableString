@@ -1,4 +1,4 @@
-#usr/bin/python3.10
+#!/usr/bin/python3.10
 # use for python3.10
 # 适用于Python3.10
 class String():
