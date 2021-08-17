@@ -1,6 +1,4 @@
 #!/usr/bin/python3.10
-# use for python3.10
-# 适用于Python3.10+
 class String():
 	def __init__(self, object: str=''):
 		self.__listofthestring = list(object)
@@ -20,9 +18,16 @@ class String():
 		return self.__class__(''.join(self.__listofthestring) + str(o))
 	def __radd__(self,o):
 		return self.__class__(''.join(self.__listofthestring) + str(o))
+	def __sub__(self,o):
+		return self.__class__(''.join(self.__listofthestring) - str(o))
+	def __rsub__(self,o):
+		return self.__class__(''.join(self.__listofthestring) - str(o))
 	def format(self,*pargs,**kwargs):
 		res=''.join(self.__listofthestring)
 		res.format(*pargs,**kwargs)
+
+
+
 
 
 
